@@ -1,0 +1,28 @@
+@use "components/reset";
+@use "components/typography";
+@use "abstracts/mixins";
+@use "abstracts/variables";
+@use "core/buttons";
+@use "core/slider";
+@use "layout/footer";
+@use "layout/header";
+@use "pages/login-page";
+@use "pages/olimpo-solidario";
+@use "pages/start-page";
+@use "sections/cards";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;500&display=swap');
+
+body{
+    @include mixins.flex-column();
+    @include mixins.flex-center();
+    flex-wrap: nowrap;
+
+    background-color: variables.$light-theme-first-bg-color;
+
+    font: typography.$noto-sans-16;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+}

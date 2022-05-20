@@ -1,0 +1,274 @@
+@use "../components/typography";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.start-page-main{
+    @include mixins.flex-column;
+    @include mixins.flex-center;
+    margin: 0.5rem;
+
+    .start-page-main-section{
+        width: 91.5vw;
+        //padding: -5rem;
+        //margin: 0.5rem 3rem;
+
+        .start-page-main-section-article1{
+            height: 30rem;
+            background-color: variables.$light-theme-second-bg-color;
+            border-radius: 1.2em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            @include mixins.flex-column;
+            @include mixins.flex-center;
+
+            .start-page-main-section-article1-figure{
+
+                .start-page-main-section-article1-figure-img{
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                }
+            }
+
+            .start-page-main-section-article1-header{
+                .start-page-main-section-article1-header-h1{
+                    font: typography.$montserrat-75;
+                    font-weight: 500;
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                    margin-top: -1rem;
+                }
+
+                .start-page-main-section-article1-header-span{
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                    font: typography.$noto-sans-16;
+                    font-weight: 400;
+                    margin: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .start-page-main-section-article2{
+            @include mixins.flex-row();
+            @include mixins.flex-center();
+
+            .article2-div{
+                background-color: variables.$light-theme-secundary-color-light-green;
+                @include mixins.flex-row();
+                align-items: center;
+                justify-content: center;
+                margin: 3rem 3rem 1.5rem 3rem;
+                width: 22rem;
+                padding: 1.1rem;
+                align-items: center;
+                text-align: center;
+                border-radius: 1.2em;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #91EED7;
+            }
+            
+
+            .start-page-main-section-article2-span{
+                .start-page-main-section-article2-span-a{
+                    color: #000000;
+                }
+            }
+        }
+
+        .start-page-main-section-figure{
+            @include mixins.flex-row();
+            @include mixins.flex-center();
+
+            div{
+                //margin: 1rem;
+                background-color: variables.$light-theme-second-bg-color;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                width: 3rem;
+                height: 3rem;
+                text-align: center;
+                border-radius: 1.2rem;
+                @include mixins.flex-row();
+                @include mixins.flex-center();
+
+                .start-page-main-section-figure-down-icon{
+                    @include mixins.flex-row();
+                    @include mixins.flex-center();
+                }
+            }
+
+            
+        }
+    }
+
+    .start-page-main-section2{
+        width: 91.5vw;
+        margin-top: 2rem;
+        //padding: 3rem;
+
+        .start-page-main-section2-article1{
+            height: 4rem;
+            background-color: variables.$light-theme-second-bg-color;
+            border-radius: 1.2em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+            @include mixins.flex-column;
+            @include mixins.flex-center;
+
+            #meet-us{
+                .start-page-main-section2-article1-meet-us-h2{
+                    font: typography.$montserrat-40;
+                    font-weight: 400;
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                }
+            }
+        }
+
+        .start-page-main-section2-article2{
+            @include mixins.flex-row();
+            @include mixins.flex-center();
+            margin-top: 3rem;
+            background: variables.$light-theme-primary-color-dark-blue;
+            flex-wrap:inherit;
+            border-radius: 1.2em;
+            height: auto;
+
+            .start-page-main-section2-article1-div1{
+                @include mixins.flex-row();
+                @include mixins.flex-center();
+                //background: rgba(55, 207, 212, 0.2);
+                //border-radius: 1.2em 0 0 1.2em;
+                height: inherit;
+                
+
+                .start-page-main-section2-article1-div1-figure{
+                    @include mixins.flex-row();
+                    @include mixins.flex-center();
+                    height: inherit;
+                    margin: 3em;
+                    
+                    .figure-sidebyside{
+                        width: auto;
+                        height: inherit;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+                }
+            }
+
+            .start-page-main-section2-article1-div2{
+                @include mixins.flex-column();
+                @include mixins.flex-center();              
+                text-align: center;
+                width: 65%;
+                margin: 3rem;
+
+                .start-page-main-section2-article1-div2-p{
+                    text-align: center;
+                    color: #ffffff;
+                    margin: 1em;
+                }
+            }
+        }
+    }
+
+    .start-page-main-section3{
+        width: 91.5vw;
+        margin-top: 2rem;
+        //padding: 3rem;
+
+        .start-page-main-section3-article1{
+            height: 4rem;
+            background-color: variables.$light-theme-second-bg-color;
+            border-radius: 1.2em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+            @include mixins.flex-column;
+            @include mixins.flex-center;
+
+            #our-team{
+                .start-page-main-section3-article1-our-time-h2{
+                    font: typography.$montserrat-40;
+                    font-weight: 400;
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                }
+            }
+        }
+
+        .start-page-main-section3-article2{
+            @include mixins.flex-row;
+            @include mixins.flex-center;
+            margin: 3rem;
+
+            .start-page-profile-card{
+                @include mixins.flex-column;
+                @include mixins.flex-center;
+
+                .start-page-profile-card-img{
+
+                }
+
+                .start-page-profile-card-h3{
+
+                }
+
+                .start-page-profile-card-p{
+
+                }
+            }
+        }
+    }
+
+    .start-page-main-section4{
+        width: 91.5vw;
+        margin-top: 2rem;
+        //padding: 3rem;
+
+        .start-page-main-section4-article1{
+            height: 4rem;
+            background-color: variables.$light-theme-second-bg-color;
+            border-radius: 1.2em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+            @include mixins.flex-column;
+            @include mixins.flex-center;
+
+            #pricing{
+                .start-page-main-section4-article1-pricing-h2{
+                    font: typography.$montserrat-40;
+                    font-weight: 400;
+                    @include mixins.flex-row;
+                    @include mixins.flex-center;
+                }
+            }
+        }
+
+        div{
+            @include mixins.flex-row;
+            @include mixins.flex-center;
+            margin: 3rem;
+
+            .start-page-main-section4-article2{
+                @include mixins.flex-column;
+                @include mixins.flex-center;
+                margin: 3rem;
+    
+                .start-page-main-section4-article2-figure{
+                    .start-page-main-section4-article2-figure-img{
+                        
+                    }
+                }
+    
+                .start-page-main-section4-article2-p{
+    
+                }
+    
+                .start-page-main-section4-article2-a{
+    
+                }
+            }
+
+            .start-page-main-section4-figure{
+                .start-page-main-section4-figure-img{
+    
+                }
+            }
+        }
+    }
+}
