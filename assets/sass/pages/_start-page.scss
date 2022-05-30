@@ -25,6 +25,9 @@
                 .start-page-main-section-article1-figure-img{
                     @include mixins.flex-row;
                     @include mixins.flex-center;
+                    transform: scaleX(1.05);
+                    width: 15em;
+                    height: 15em;
                 }
             }
 
@@ -34,7 +37,6 @@
                     font-weight: 500;
                     @include mixins.flex-row;
                     @include mixins.flex-center;
-                    margin-top: -1rem;
                 }
 
                 .start-page-main-section-article1-header-span{
@@ -42,7 +44,6 @@
                     @include mixins.flex-center;
                     font: typography.$noto-sans-16;
                     font-weight: 400;
-                    margin: 2rem;
                     text-align: center;
                 }
             }
@@ -94,8 +95,6 @@
                     @include mixins.flex-center();
                 }
             }
-
-            
         }
     }
 
@@ -125,7 +124,7 @@
         .start-page-main-section2-article2{
             @include mixins.flex-row();
             @include mixins.flex-center();
-            margin-top: 3rem;
+            margin: 3em 0 1em 0;
             background: variables.$light-theme-primary-color-dark-blue;
             flex-wrap:inherit;
             border-radius: 1.2em;
@@ -195,24 +194,7 @@
         .start-page-main-section3-article2{
             @include mixins.flex-row;
             @include mixins.flex-center;
-            margin: 3rem;
-
-            .start-page-profile-card{
-                @include mixins.flex-column;
-                @include mixins.flex-center;
-
-                .start-page-profile-card-img{
-
-                }
-
-                .start-page-profile-card-h3{
-
-                }
-
-                .start-page-profile-card-p{
-
-                }
-            }
+            margin: 2.5em 0 1em 0;
         }
     }
 
@@ -242,31 +224,47 @@
         div{
             @include mixins.flex-row;
             @include mixins.flex-center;
-            margin: 3rem;
+            height: 30rem;
+            margin: 3em 0;
+            background-color: variables.$light-theme-second-bg-color;
+            border-radius: 1.2em;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
             .start-page-main-section4-article2{
                 @include mixins.flex-column;
                 @include mixins.flex-center;
                 margin: 3rem;
+                width: 60%;
     
                 .start-page-main-section4-article2-figure{
                     .start-page-main-section4-article2-figure-img{
-                        
+                        text-align: center;
+                        margin: 0.5em 0;
+                        width: 10em;
+                        height: 10em;
                     }
                 }
     
                 .start-page-main-section4-article2-p{
-    
+                    text-align: center;
+                    width: 70%;
                 }
     
                 .start-page-main-section4-article2-a{
-    
+                    text-align: center;
                 }
             }
 
             .start-page-main-section4-figure{
+                width: 50%;
+                margin: 0;
+                @include mixins.flex-row;
+                align-items: flex-start;
+
                 .start-page-main-section4-figure-img{
-    
+                    width: 20em;
+                    height: 20em;
+                    
                 }
             }
         }

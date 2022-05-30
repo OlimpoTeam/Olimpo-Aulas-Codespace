@@ -1,0 +1,25 @@
+.start-page-main{
+    .start-page-main-section{
+        .start-page-main-section-figure{
+            div{
+                i{
+                    @keyframes updown {
+                        0% {
+                            transform:  translateY(-19%);
+                        }
+                    
+                        50% {
+                            transform: translateY(19%);
+                        }
+                    
+                        100% {
+                            transform: translateY(-19%);
+                        }
+                    }
+
+                    animation: updown 2s ease infinite;
+                }
+            }
+        }
+    }
+}
