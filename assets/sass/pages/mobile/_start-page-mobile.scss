@@ -1,0 +1,180 @@
+@use "../../components/typography";
+@use "../../abstracts/mixins";
+@use "../../abstracts/variables";
+
+@media only screen and (max-width: 480px) {
+    // Mobile phones;
+
+    .start-page-main{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+    
+        .start-page-main-section{
+            
+    
+            .start-page-main-section-article1{
+                
+    
+                .start-page-main-section-article1-figure{
+    
+                    .start-page-main-section-article1-figure-img{
+                        
+                    }
+                }
+    
+                .start-page-main-section-article1-header{
+                    .start-page-main-section-article1-header-h1{
+                        
+                    }
+    
+                    .start-page-main-section-article1-header-p{
+                        
+                    }
+    
+                    .start-page-main-section-article1-header-span{
+                        
+                    }
+                }
+            }
+    
+            .start-page-main-section-article2{
+                
+    
+                .article2-div{
+                    
+                }
+                
+    
+                .start-page-main-section-article2-span{
+                    .start-page-main-section-article2-span-a{
+                        
+                    }
+                }
+            }
+    
+            .start-page-main-section-figure{
+                
+    
+                div{
+                    
+    
+                    .start-page-main-section-figure-down-icon{
+                        
+                    }
+                }
+            }
+        }
+    
+        .start-page-main-section2{
+            
+    
+            .start-page-main-section2-article1{
+                
+    
+                #meet-us{
+                    .start-page-main-section2-article1-meet-us-h2{
+                        
+                    }
+                }
+            }
+    
+            .start-page-main-section2-article2{
+                
+    
+                .start-page-main-section2-article1-div1{
+                    
+                    
+    
+                    .start-page-main-section2-article1-div1-figure{
+                        
+                        
+                        .figure-sidebyside{
+                            
+                        }
+                    }
+                }
+    
+                .start-page-main-section2-article1-div2{
+                    
+    
+                    .start-page-main-section2-article1-div2-p{
+                        
+                    }
+                }
+            }
+        }
+    
+        .start-page-main-section3{
+            
+    
+            .start-page-main-section3-article1{
+                
+    
+                #our-team{
+                    .start-page-main-section3-article1-our-time-h2{
+                        
+                    }
+                }
+            }
+    
+            .start-page-main-section3-article2{
+                
+            }
+        }
+    
+        .start-page-main-section4{
+            
+    
+            .start-page-main-section4-article1{
+                
+    
+                #pricing{
+                    .start-page-main-section4-article1-pricing-h2{
+                        
+                    }
+                }
+            }
+    
+            div{
+                
+    
+                .start-page-main-section4-article2{
+                    
+        
+                    .start-page-main-section4-article2-figure{
+                        .start-page-main-section4-article2-figure-img{
+                            
+                        }
+                    }
+        
+                    .start-page-main-section4-article2-p{
+                        
+                    }
+        
+                    .start-page-main-section4-article2-a{
+                        
+                    }
+                }
+    
+                .start-page-main-section4-figure{
+                    
+    
+                    .start-page-main-section4-figure-img{
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    // Tablets;
+}
+
+@media only screen and (max-width: 1200px) {
+    // Desktop;
+
+    
+}

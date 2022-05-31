@@ -7,9 +7,10 @@
 @use "core/slider";
 @use "layout/footer";
 @use "layout/header";
-@use "pages/login-page";
-@use "pages/olimpo-solidario";
-@use "pages/start-page";
+@use "pages/desktop/login-page";
+@use "pages/desktop/olimpo-solidario";
+@use "pages/desktop/start-page";
+@use "pages/mobile/start-page-mobile";
 @use "sections/cards";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;500&display=swap');
