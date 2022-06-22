@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Olimpo Aulas - Página de Login</title>
 </head>
-<body>
-    <section class="login-page-section-left">
-        <div class="login-page-logo-olimpo">
-            <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas">
+<body class="login-container">
+    <header class="login-page-header">
+        <div class="login-page-logo-div" onclick="window.location.href = '../../../index.html'">
+            <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas" class="logo-page-logo-olimpo-img">
+            <p class="logo-page-logo-olimpo-logomarca">Olimpo Aulas</p>
         </div>
+    </header>
 
+    <section class="login-page-section-left">
         <div class="login-page-div-image-girl">
-            <img src="../img/stickers/login_sticker.svg" alt="Sticker da Página de Login" class="login-page-girl-img">
+            <img src="../img/stickers/login_sticker.svg" alt="Sticker da Página de Login" class="login-page-sticker">
         </div>
 
         <div class="login-page-div-phrase">
-            <h3 class="login-page-phrase-h3">Seja um de nossos primeiros alunos!</h3>
+            <span class="login-page-phrase-span">Seja um de nossos primeiros alunos!</span>
         </div>
-    </section> 
+    </section>
+    
     <section class="login-page-section-right">
         <div class="login-page-div-box">
-
+            <div class="login-page-div-box-instructions">
+                <h2 class="login-page-right-h2">Log in</h2>
+                <p class="login-page-right-p">Entre com seus dados de inscrição do Olimpo Solidário:</p>
+            </div>
             
-            <h2 class="login-page-right-h2">Vamos começar.</h2>
-            <p class="login-page-right-p">Entre com seus dados de inscrição do Olimpo Solidário.</p>
-
-            <h4 class="login-page-email-h4">E-mail</h4>
-            <input class="login-page-input-email" type="email" placeholder="Digite aqui o seu e-mail">
-            <h4 class="login-page-password-h4">Senha</h4>
-            <input class="login-page-input-password" type="password" placeholder="Digite aqui a sua senha">
-
-             <button class="login-page-button-enter">Entrar</button>
+            <div class="login-page-div-box-inputs">
+                <h4 class="login-page-email-h4">E-mail:</h4>
+                <input class="login-page-input-email" type="email" placeholder="Digite aqui o seu e-mail">
+                <h4 class="login-page-password-h4">Senha:</h4>
+                <input class="login-page-input-password" type="password" placeholder="Digite aqui a sua senha">
+            </div>
+            <br>
+            <button class="login-page-button-enter">Entrar</button>
         </div>
     </section>
 </body>

@@ -137,6 +137,199 @@ img {
   text-transform: uppercase;
 }
 
+/* Mobile Style:
+===========================================================================*/
+.login-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1f;
+  grid-template-rows: 1f 1f 1f;
+  grid-template-areas: "header" "mright" "mleft";
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5em;
+}
+.login-container .login-page-header {
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+}
+.login-container .login-page-header .login-page-logo-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 0.5em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+.login-container .login-page-header .login-page-logo-div .logo-page-logo-olimpo-img {
+  transform: scaleX(1.05);
+  width: 4em;
+  height: 4em;
+}
+.login-container .login-page-header .login-page-logo-div .logo-page-logo-olimpo-logomarca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font: 1.5rem "Montserrat", sans-serif;
+}
+.login-container .login-page-section-left {
+  grid-area: mleft;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.login-container .login-page-section-left .login-page-div-image-girl {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.login-container .login-page-section-left .login-page-div-image-girl .login-page-sticker {
+  width: 30%;
+  height: 25%;
+}
+.login-container .login-page-section-left .login-page-div-phrase {
+  padding-top: 0.5em;
+}
+.login-container .login-page-section-left .login-page-div-phrase .login-page-div-phrase-span {
+  font: 0.75rem "Noto Sans", sans-serif;
+}
+.login-container .login-page-section-right {
+  grid-area: mright;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.login-container .login-page-section-right .login-page-div-box {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-instructions {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 1em;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-instructions .login-page-right-h2 {
+  padding-left: 0.4em;
+  margin-bottom: 0.5em;
+  font-weight: bolder;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-instructions .login-page-right-p {
+  padding-left: 0.6em;
+  margin-bottom: 0.8em;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-inputs .login-page-email-h4 {
+  margin: 0 0 0 1em;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-inputs .login-page-input-email {
+  width: 95%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.5em;
+  border-color: rgba(35, 48, 67, 0.2549019608);
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-inputs .login-page-password-h4 {
+  margin: 0.5em 0 0 1em;
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-div-box-inputs .login-page-input-password {
+  width: 95%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.5em;
+  border-color: rgba(35, 48, 67, 0.2549019608);
+}
+.login-container .login-page-section-right .login-page-div-box .login-page-button-enter {
+  width: 95%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.5em;
+  border-color: rgba(158, 65, 80, 0.1215686275);
+  background: #9E4151;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 700px) {
+  .login-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1f 2f;
+    grid-template-rows: 1f 2f;
+    grid-template-areas: "header header" "mright mleft";
+    justify-content: center;
+    align-items: center;
+    grid-auto-rows: 50%;
+  }
+  .login-container .login-page-header {
+    grid-area: header;
+    justify-self: start;
+    align-self: start;
+    grid-auto-rows: 60%;
+  }
+  .login-container .login-page-header .login-page-logo-div {
+    display: flex;
+    flex-direction: row;
+  }
+  .login-container .login-page-header .login-page-logo-div .logo-page-logo-olimpo-img {
+    transform: scaleX(1.03);
+    width: 4.5em;
+    height: 4.5em;
+  }
+  .login-container .login-page-section-left {
+    grid-area: mleft;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    grid-auto-rows: 60%;
+    row-gap: 2.5em;
+  }
+  .login-container .login-page-section-left .login-page-div-image-girl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .login-container .login-page-section-left .login-page-div-image-girl .login-page-sticker {
+    width: 50%;
+    height: 50%;
+  }
+  .login-container .login-page-section-right {
+    grid-area: mright;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    grid-auto-rows: 60%;
+  }
+}
 @media only screen and (max-width: 480px) {
   .start-page-main {
     display: grid;
