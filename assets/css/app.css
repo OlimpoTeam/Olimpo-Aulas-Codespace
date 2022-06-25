@@ -464,7 +464,6 @@ img {
   width: 95%;
   height: auto;
   border-radius: 1.2em;
-  margin-top: 1em;
   row-gap: 1em;
 }
 .start-page-container .start-page-main .start-page-main-section4 .start-page-main-section4-article1 {
@@ -552,11 +551,13 @@ img {
     grid-template-columns: 1f 1f 1f;
     grid-row: 1f;
     grid-template-areas: "thirdcard firstcard secondcard";
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+    width: 100%;
   }
   .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card2, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card3 {
-    width: 90%;
-    margin: 1em;
-    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
   }
   .start-page-container .start-page-main .start-page-main-section4 div {
     display: flex;
