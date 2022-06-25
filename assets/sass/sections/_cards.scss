@@ -1,38 +1,38 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+@use "../pages/desktop/start-page";
+@use "../pages/mobile/start-page-mobile";
 
-.start-page-main-section3{
-    .start-page-main-section3-article2{
-        .start-page-profile-card{
-            @include mixins.flex-column;
-            @include mixins.flex-center;
-            width: 25em;
-            height: 35em;
-            margin: 2em;
-            background-color: variables.$light-theme-second-bg-color;
-            border-radius: 1.2em;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
-            
-            .start-page-profile-card-img{
-                @include mixins.flex-column;
-                @include mixins.flex-center;
-                transform: scaleX(1);
-                width: 10em;
-                height: 10em;
-            }
 
-            .start-page-profile-card-h3{
+/* Start Page Profile Cards:
+=============================================================================================================*/
+.start-page-main{
+    .start-page-main-section3{
+        .start-page-main-section3-article2{
+            .start-page-profile-card1, .start-page-profile-card2, .start-page-profile-card3{
+                display: grid;
+                justify-items: center;
+                align-items: center;
                 text-align: center;
+                padding: 1em;
+                width: 100%;
+                height: 30em;
+                border-radius: 1.2em;
                 margin: 1em 0;
+                background-color: #f4f4f4;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
             }
 
-            .start-page-profile-card-span{
-                text-align: center;
+            .start-page-profile-card1{
+                grid-area: firstcard;
             }
-
-            .start-page-profile-card-p{
-                text-align: center;
-                margin: 1em 2em;
+    
+            .start-page-profile-card2{
+                grid-area: secondcard;
+            }
+    
+            .start-page-profile-card3{
+                grid-area: thirdcard;
             }
         }
     }

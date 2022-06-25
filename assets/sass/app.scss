@@ -1,31 +1,49 @@
-@use "components/reset";
-@use "components/typography";
-@use "abstracts/mixins";
-@use "abstracts/variables";
-@use "core/animations";
-@use "core/buttons";
-@use "core/slider";
-@use "layout/footer";
-@use "layout/header";
-@use "pages/desktop/login-page";
-@use "pages/desktop/olimpo-solidario";
-@use "pages/desktop/start-page";
-@use "pages/mobile/login-page-mobile";
-@use "pages/mobile/start-page-mobile";
-@use "sections/cards";
+/* Importing Components Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "components/reset";
+    @use "components/typography";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;500&display=swap');
+/* Importing Abstracts Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "abstracts/mixins";
+    @use "abstracts/variables";
 
-body{
-    @include mixins.flex-column();
-    @include mixins.flex-center();
-    flex-wrap: nowrap;
+/* Importing Core Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "core/animations";
+    @use "core/buttons";
+    @use "core/slider";
 
-    background-color: variables.$light-theme-first-bg-color;
+/* Importing Layout Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "layout/header";    
+    @use "layout/footer";
 
-    font: typography.$noto-sans-16;
-    font-weight: 400;
+/* Importing Pages Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "pages/desktop/start-page";
+    @use "pages/desktop/login-page";
+    @use "pages/desktop/olimpo-solidario";
 
-    margin: 0;
-    padding: 0;
-}
+/* Importing Sections Styles (Visible only on Scss Files):
+==============================================================================================*/
+    @use "sections/cards";
+
+/* Importing Fonts:
+==============================================================================================*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;500&display=swap');
+
+
+/* Common Styles:
+==============================================================================================*/
+    body{
+        background-color: variables.$light-theme-first-bg-color;
+
+        font: typography.$noto-sans-16;
+        font-weight: 400;
+
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
