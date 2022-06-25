@@ -554,7 +554,7 @@ img {
     grid-template-areas: "thirdcard firstcard secondcard";
   }
   .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card2, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card3 {
-    width: 22em;
+    width: 90%;
     margin: 1em;
     padding: 1em;
   }
