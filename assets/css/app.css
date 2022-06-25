@@ -497,6 +497,7 @@ img {
   padding: 2em;
   background-color: #F7F7F7;
   border-radius: 1.2em;
+  margin-top: 1em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
 }
 .start-page-container .start-page-main .start-page-main-section4 div .start-page-main-section4-article2 {
@@ -551,8 +552,8 @@ img {
     grid-template-columns: 1f 1f 1f;
     grid-row: 1f;
     grid-template-areas: "thirdcard firstcard secondcard";
-    -moz-column-gap: 3em;
-         column-gap: 3em;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
     width: 100%;
   }
   .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card2, .start-page-container .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card3 {
@@ -791,6 +792,10 @@ img {
   margin: 1em 0;
   background-color: #f4f4f4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+}
+.start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1 .start-page-profile-card-img, .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card2 .start-page-profile-card-img, .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card3 .start-page-profile-card-img {
+  width: 10em;
+  height: 10em;
 }
 .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1 {
   grid-area: firstcard;
