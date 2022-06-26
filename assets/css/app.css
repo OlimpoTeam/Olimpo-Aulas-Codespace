@@ -39,6 +39,80 @@ img {
 
 /*Colors:
 ====================================================================*/
+/* Loader Animation:
+=========================================================================================*/
+.scroll-block {
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 115;
+}
+.loader-wrapper #loader-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 15em;
+  height: 15em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.loader-wrapper .balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: 10%;
+}
+.loader-wrapper .ball {
+  position: relative;
+  top: 2.5em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 0.688em;
+  margin: 0 0.5em;
+  border: none;
+  -webkit-animation: 0.6s bounce infinite alternate;
+          animation: 0.6s bounce infinite alternate;
+  transform: translate3d(0.8);
+}
+.loader-wrapper .second-ball {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loader-wrapper .third-ball {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+@-webkit-keyframes bounce {
+  to {
+    width: 1.375em;
+    height: 1.375em;
+    transform: translate3d(0, 1em, 0);
+  }
+}
+@keyframes bounce {
+  to {
+    width: 1.375em;
+    height: 1.375em;
+    transform: translate3d(0, 1em, 0);
+  }
+}
+
+/* Start Page - Down Button Animation:
+=========================================================================================*/
 .start-page-main .start-page-main-section .start-page-main-section-figure div i {
   -webkit-animation: updown 2s ease infinite;
           animation: updown 2s ease infinite;
@@ -346,7 +420,7 @@ img {
   height: auto;
   border-radius: 1.2em;
   margin-top: 1em;
-  row-gap: 1em;
+  gap: 1em;
 }
 .start-page-container .start-page-main .start-page-main-section2 .start-page-main-section2-article1 {
   display: flex;
@@ -809,6 +883,10 @@ img {
 
 /* Common Styles:
 ==============================================================================================*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FFFFFF;
   font: 1em "Noto Sans", sans-serif;

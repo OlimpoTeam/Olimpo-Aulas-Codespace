@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-block">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,17 @@
     <title>Olimpo Aulas - Página de Login</title>
 </head>
 <body class="login-container">
+    <div class="loader-wrapper" id="loader-background">
+        <img id="loader-img">
+        <br>
+        <div class="balls">
+            <div class="first-ball ball"></div>
+            <div class="second-ball ball"></div>
+            <div class="third-ball ball"></div>
+        </div>
+        <script src="../../assets/js/basicFunctions.js"></script>
+    </div>
+
     <header class="login-page-header">
         <div class="login-page-logo-div" onclick="window.location.href = '../../../index.html'">
             <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas" class="logo-page-logo-olimpo-img">

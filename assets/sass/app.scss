@@ -36,6 +36,10 @@
 
 /* Common Styles:
 ==============================================================================================*/
+    html{
+        scroll-behavior: smooth;
+    }    
+
     body{
         background-color: variables.$light-theme-first-bg-color;
 

@@ -131,7 +131,7 @@
             height: auto;
             border-radius: 1.2em;
             margin-top: 1em;
-            row-gap: 1em;
+            gap: 1em;
     
             .start-page-main-section2-article1{
                 @include mixins.flex-column();
