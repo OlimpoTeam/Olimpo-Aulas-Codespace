@@ -81,7 +81,7 @@
                 }, 50);
 
                 html.classList.remove('scroll-block');
-            }, 3500);
+            }, 2000);
         }
 
         function scroll_up() {
