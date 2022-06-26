@@ -4,7 +4,7 @@
     ======================================================================================*/
         /* HTML Tags:
         ==================================================================================*/
-            //const body = document.body;
+            const body = document.body;
             const html = document.querySelector('html');
             const loaderWrapper = document.querySelector('.loader-wrapper');
             const loaderImg = document.getElementById('loader-img');
@@ -24,6 +24,13 @@
 
 /* Processing:
 ==========================================================================================*/
+    /* onload functions:
+    ======================================================================================*/
+        window.onload = function() {
+            scroll_up();
+            init();
+        };
+
     /* Conditions:
     ======================================================================================*/
         light = true;
@@ -77,6 +84,11 @@
             }, 3500);
         }
 
+        function scroll_up() {
+            body.scrollTop = 0; // For Safari.
+            document.documentElement.scrollTop = 0; // For Others.
+        }  
+
 /* Calling Functions to Work:
 ==========================================================================================*/
-    init();
+    //init();

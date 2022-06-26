@@ -392,6 +392,7 @@ img {
   background-color: #91EED7;
 }
 .start-page-container .start-page-main .start-page-main-section .start-page-main-section-article2 .start-page-main-section-article2-span .start-page-main-section-article2-span-a {
+  text-decoration: none;
   color: #000000;
 }
 .start-page-container .start-page-main .start-page-main-section .start-page-main-section-figure {
@@ -852,6 +853,61 @@ img {
     grid-auto-rows: 60%;
   }
 }
+/* Mobile Style for Olimpo Solidario Page:
+==============================================================================================*/
+.olimpo-solidario-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1f;
+  grid-template-rows: 1f 1f 1f;
+  grid-template-areas: "osheader" "osmain" "osfooter";
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+}
+.olimpo-solidario-container .olimpo-solidario-header {
+  grid-area: osheader;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+}
+.olimpo-solidario-container .olimpo-solidario-header .olimpo-solidario-header-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 0.5em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+.olimpo-solidario-container .olimpo-solidario-header .olimpo-solidario-header-div .olimpo-solidario-header-div-img {
+  transform: scale(1.15, 1.09);
+}
+.olimpo-solidario-container .olimpo-solidario-header .olimpo-solidario-header-div .header-img {
+  width: 4em;
+  height: 4em;
+}
+.olimpo-solidario-container .olimpo-solidario-header .olimpo-solidario-header-div .header-logomarca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font: 1.5rem "Montserrat", sans-serif;
+  font-weight: 550;
+}
+.olimpo-solidario-container .olimpo-solidario-main {
+  grid-area: osmain;
+}
+.olimpo-solidario-container .olimpo-solidario-footer {
+  grid-area: osfooter;
+}
+
+/* Desktop Style for Olimpo Solidario Page:
+==============================================================================================*/
 /* Start Page Profile Cards:
 =============================================================================================================*/
 .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card1, .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card2, .start-page-main .start-page-main-section3 .start-page-main-section3-article2 .start-page-profile-card3 {
