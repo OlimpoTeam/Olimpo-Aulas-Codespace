@@ -7,6 +7,10 @@
         overflow: hidden;
     }
 
+    #loader-background{
+        background-color: #F7F7F7;
+    }
+
     .loader-wrapper{
         @include mixins.flex-column();
         @include mixins.flex-center();

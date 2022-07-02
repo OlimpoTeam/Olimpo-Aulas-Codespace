@@ -6,188 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="./assets/js/main.js"></script>
     <title>Olimpo Aulas: Um caminho de acesso ao Ensino Superior na Grande BH</title>
 </head>
 
-<body class="start-page-container">
+<body>
     <div class="loader-wrapper" id="loader-background">
-        <img id="loader-img">
+        <img src="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" id="loader-img">
         <br>
         <div class="balls">
             <div class="first-ball ball"></div>
             <div class="second-ball ball"></div>
             <div class="third-ball ball"></div>
         </div>
-        <script src="./assets/js/basicFunctions.js"></script>
     </div>
 
     <div class="persistent-btn">
         <button id="theme-btn"><i id="theme" class="fa fa-moon-o"></i></button>
     </div>
 
-    <header class="start-page-header">
-        <nav class="start-page-header-nav">
-            <i id="start-page-header-menu-hamburguer" class="fa fa-regular fa-bars" style="font-size: 1.9em;"></i>
-            
-            <ul class="start-page-header-nav-ul">
-                <li class="start-page-header-nav-ul-li">
-                    <a href="#meet-us-article" class="start-page-header-nav-ul-li-a">Conheça</a>
-                </li>
-
-                <li class="start-page-header-nav-ul-li">
-                    <a href="#our-team-article" class="start-page-header-nav-ul-li-a">Nosso Time</a>
-                </li>
-
-                <li class="start-page-header-nav-ul-li">
-                    <a href="#pricing-article" class="start-page-header-nav-ul-li-a">Preço</a>
-                </li>
-
-                <li class="start-page-header-nav-ul-li">
-                    <a href="./assets/pages/contato.html" class="start-page-header-nav-ul-li-a">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="start-page-header-div1">
-            <button class="start-page-header-div1-button" onclick="window.location.href = './assets/pages/login_page.html' ">Log in</button>
-        </div>
-    </header>
-
-    <main class="start-page-main">
-        <section class="start-page-main-section">
-            <article class="start-page-main-section-article1">
-                <figure class="start-page-main-section-article1-figure">
-                    <img src="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" alt="Olimpo Aulas - Logo - Tema Branco" class="start-page-main-section-article1-figure-img">
-                </figure>
-                <br>
-                <header class="start-page-main-section-article1-header">
-                    <h1 class="start-page-main-section-article1-header-h1">Olimpo Aulas</h1>
-                    <br>
-                    <p class="start-page-main-section-article1-header-p">
-                        Um caminho de acesso ao Ensino Superior na Grande BH.
-                    </p>
-                    <br>
-                    <span class="start-page-main-section-article1-header-span">
-                        Propomos potencializar o ensino popular.
-                    </span>
-                    <br>
-                </header>
-            </article>
-
-            <article class="start-page-main-section-article2">
-                <div class="article2-div">
-                    <span class="start-page-main-section-article2-span">
-                        Participe do nosso processo seletivo para o pré-vestibular.
-                        <a href="./assets/pages/olimpo_solidario.html" class="start-page-main-section-article2-span-a"><strong>Saiba mais</strong></a>
-                    </span>
-                </div>
-            </article>
-
-            <figure class="start-page-main-section-figure" >
-                <div onclick="window.location.href ='#meet-us-article'">
-                    <i class="fa fa-angle-double-down" style="font-size: 30px;" class="start-page-main-section-figure-down-icon"></i>
-                </div>
-            </figure>
-        </section>
-
-        <section class="start-page-main-section2" id="meet-us-article">
-            <article class="start-page-main-section2-article1">
-                <header id="meet-us">
-                    <h2 class="start-page-main-section2-article1-meet-us-h2">Conheça a Olimpo</h2>
-                </header>
-            </article>
-
-            <article class="start-page-main-section2-article2">
-                <div class="start-page-main-section2-article1-div1">
-                    <!--<figure class="start-page-main-section2-article1-div1-figure">-->
-                        <img src="./assets/img/logo/logo-sidebyside-group.svg" alt="Logos - Olimpo Aulas" class="figure-sidebyside">
-                    <!--</figure>-->
-                </div>
-
-                <div class="start-page-main-section2-article1-div2">
-                    <p class="start-page-main-section2-article1-div2-p">
-                        A Olimpo Aulas é uma plataforma idealizada em 2021 visando facilitar o acesso ao Ensino Superior
-                        para alunos que moram em Belo Horizonte e região metropolitana. O projeto é uma idealização de
-                        alunos graduandos da Universidade FUMEC e Promove. E tem como meta seu lançamento ao público em 2022.
-                    </p>
-                    <br>
-                    <p class="start-page-main-section2-article1-div2-p">
-                        Nosso nome foi escolhido com base nos deuses greco-romanos, buscando trazer a ideia de acesso à
-                        educação assim como era feita a dialética nas praças de Atenas, mas com foco de acesso inicial as minorias.
-                    </p>
-                    <br>
-                </div>
-            </article>
-        </section>
-
-        <section class="start-page-main-section3" id="our-team-article">
-            <article class="start-page-main-section3-article1">
-                <header id="our-team">
-                    <h2 class="start-page-main-section3-article1-our-time-h2">Nosso Time</h2>
-                </header>
-            </article>
-
-            <article class="start-page-main-section3-article2">
-                <div class="start-page-profile-card1">
-                    <img src="./assets/img/olimpo-team/guilherme_avatar.svg" alt="Guilherme Henrique - Foto" class="start-page-profile-card-img">
-                    <h3 class="start-page-profile-card-h3">Guilherme Henrique</h3>
-                    <span class="start-page-profile-card-span">Co-fundador</span>
-                    <p class="start-page-profile-card-p">Estudante de Ciência da Computação da Universidade FUMEC.</p>
-                    <p class="start-page-profile-card-p">Responsável pela programação e UI design do site.</p>
-                </div>
-                <br>
-                <div class="start-page-profile-card2">
-                    <img src="./assets/img/olimpo-team/vivian_avatar.svg" alt="Vívian Vasconcelos - Foto" class="start-page-profile-card-img">
-                    <h3 class="start-page-profile-card-h3">Vívian Vasconcelos</h3>
-                    <span class="start-page-profile-card-span">Co-fundadora</span>
-                    <p class="start-page-profile-card-p">Estudante de Design da Universidade FUMEC.</p>
-                    <p class="start-page-profile-card-p">Responsável pelo desenvolvimento e coordenação do design do site.</p>
-                </div>
-                <br>
-                <div class="start-page-profile-card3">
-                    <img src="./assets/img/olimpo-team/eric_avatar.svg" alt="Eric Ferreira - Foto" class="start-page-profile-card-img">
-                    <h3 class="start-page-profile-card-h3">Eric Ferreira</h3>
-                    <span class="start-page-profile-card-span">Co-fundador</span>
-                    <p class="start-page-profile-card-p">Estudante de Sistema de Informação da Universidade Promove.</p>
-                    <p class="start-page-profile-card-p">Responsável pela programação do site.</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="start-page-main-section4" id="pricing-article">
-            <article class="start-page-main-section4-article1">
-                <header id="pricing">
-                    <h2 class="start-page-main-section4-article1-pricing-h2">Preço</h2>
-                </header>
-            </article>
-
-            <div>
-                <article class="start-page-main-section4-article2">
-                    <figure class="start-page-main-section4-article2-figure">
-                        <img src="./assets/img/logo/logo-olimpo-solidario-light-theme.svg" alt="Olimpo Solidário - Logo - Tema Claro" class="start-page-main-section4-article2-figure-img">
-                    </figure>
+    <main class="start-page-container main-content hide-content">
+        <header class="start-page-header">
+            <nav class="start-page-header-nav">
+                <i id="start-page-header-menu-hamburguer" class="fa fa-regular fa-bars hamburguer" style="font-size: 1.9em;"></i>
+                
+                <ul class="start-page-header-nav-ul">
+                    <li class="start-page-header-nav-ul-li">
+                        <a href="#meet-us-article" class="start-page-header-nav-ul-li-a">Conheça</a>
+                    </li>
     
-                    <p class="start-page-main-section4-article2-p">
-                        Nossa ideia é que o programa Olimpo Solidário traga parcerias com cursinhos populares da Grande BH para dentro da Olimpo Aulas, sendo o principal foco o fornecimento de uma educação gratuita.
-                    </p>
-                    <br>
-                    <a href="./assets/pages/olimpo_solidario.html" class="start-page-main-section4-article2-a">
-                        <strong>Saiba Mais</strong>
-                    </a>
-                </article>
-
-                <figure class="start-page-main-section4-figure">
-                    <img src="./assets/img/stickers/pricing_sticker.svg" alt="princing-sticker" class="start-page-main-section4-figure-img">
-                </figure>
+                    <li class="start-page-header-nav-ul-li">
+                        <a href="#our-team-article" class="start-page-header-nav-ul-li-a">Nosso Time</a>
+                    </li>
+    
+                    <li class="start-page-header-nav-ul-li">
+                        <a href="#pricing-article" class="start-page-header-nav-ul-li-a">Preço</a>
+                    </li>
+    
+                    <li class="start-page-header-nav-ul-li">
+                        <a href="./assets/pages/contato.html" class="start-page-header-nav-ul-li-a">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="start-page-header-div1">
+                <button class="start-page-header-div1-button" onclick="window.location.href = './assets/pages/login_page.html' ">Log in</button>
             </div>
-        </section>
+        </header>
+    
+        <main class="start-page-main">
+            <section class="start-page-main-section">
+                <article class="start-page-main-section-article1">
+                    <figure class="start-page-main-section-article1-figure">
+                        <img src="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" alt="Olimpo Aulas - Logo - Tema Branco" class="start-page-main-section-article1-figure-img">
+                    </figure>
+                    <br>
+                    <header class="start-page-main-section-article1-header">
+                        <h1 class="start-page-main-section-article1-header-h1">Olimpo Aulas</h1>
+                        <br>
+                        <p class="start-page-main-section-article1-header-p">
+                            Um caminho de acesso ao Ensino Superior na Grande BH.
+                        </p>
+                        <br>
+                        <span class="start-page-main-section-article1-header-span">
+                            Propomos potencializar o ensino popular.
+                        </span>
+                        <br>
+                    </header>
+                </article>
+    
+                <article class="start-page-main-section-article2">
+                    <div class="article2-div">
+                        <span class="start-page-main-section-article2-span">
+                            Participe do nosso processo seletivo para o pré-vestibular.
+                            <a href="./assets/pages/olimpo_solidario.html" class="start-page-main-section-article2-span-a"><strong>Saiba mais</strong></a>
+                        </span>
+                    </div>
+                </article>
+    
+                <figure class="start-page-main-section-figure" >
+                    <div onclick="window.location.href ='#meet-us-article'">
+                        <i class="fa fa-angle-double-down" style="font-size: 30px;" class="start-page-main-section-figure-down-icon"></i>
+                    </div>
+                </figure>
+            </section>
+    
+            <section class="start-page-main-section2" id="meet-us-article">
+                <article class="start-page-main-section2-article1">
+                    <header id="meet-us">
+                        <h2 class="start-page-main-section2-article1-meet-us-h2">Conheça a Olimpo</h2>
+                    </header>
+                </article>
+    
+                <article class="start-page-main-section2-article2">
+                    <div class="start-page-main-section2-article1-div1">
+                        <!--<figure class="start-page-main-section2-article1-div1-figure">-->
+                            <img src="./assets/img/logo/logo-sidebyside-group.svg" alt="Logos - Olimpo Aulas" class="figure-sidebyside">
+                        <!--</figure>-->
+                    </div>
+    
+                    <div class="start-page-main-section2-article1-div2">
+                        <p class="start-page-main-section2-article1-div2-p">
+                            A Olimpo Aulas é uma plataforma idealizada em 2021 visando facilitar o acesso ao Ensino Superior
+                            para alunos que moram em Belo Horizonte e região metropolitana. O projeto é uma idealização de
+                            alunos graduandos da Universidade FUMEC e Promove. E tem como meta seu lançamento ao público em 2022.
+                        </p>
+                        <br>
+                        <p class="start-page-main-section2-article1-div2-p">
+                            Nosso nome foi escolhido com base nos deuses greco-romanos, buscando trazer a ideia de acesso à
+                            educação assim como era feita a dialética nas praças de Atenas, mas com foco de acesso inicial as minorias.
+                        </p>
+                        <br>
+                    </div>
+                </article>
+            </section>
+    
+            <section class="start-page-main-section3" id="our-team-article">
+                <article class="start-page-main-section3-article1">
+                    <header id="our-team">
+                        <h2 class="start-page-main-section3-article1-our-time-h2">Nosso Time</h2>
+                    </header>
+                </article>
+    
+                <article class="start-page-main-section3-article2">
+                    <div class="start-page-profile-card1">
+                        <img src="./assets/img/olimpo-team/guilherme_avatar.svg" alt="Guilherme Henrique - Foto" class="start-page-profile-card-img">
+                        <h3 class="start-page-profile-card-h3">Guilherme Henrique</h3>
+                        <span class="start-page-profile-card-span">Co-fundador</span>
+                        <p class="start-page-profile-card-p">Estudante de Ciência da Computação da Universidade FUMEC.</p>
+                        <p class="start-page-profile-card-p">Responsável pela programação e UI design do site.</p>
+                    </div>
+                    <br>
+                    <div class="start-page-profile-card2">
+                        <img src="./assets/img/olimpo-team/vivian_avatar.svg" alt="Vívian Vasconcelos - Foto" class="start-page-profile-card-img">
+                        <h3 class="start-page-profile-card-h3">Vívian Vasconcelos</h3>
+                        <span class="start-page-profile-card-span">Co-fundadora</span>
+                        <p class="start-page-profile-card-p">Estudante de Design da Universidade FUMEC.</p>
+                        <p class="start-page-profile-card-p">Responsável pelo desenvolvimento e coordenação do design do site.</p>
+                    </div>
+                    <br>
+                    <div class="start-page-profile-card3">
+                        <img src="./assets/img/olimpo-team/eric_avatar.svg" alt="Eric Ferreira - Foto" class="start-page-profile-card-img">
+                        <h3 class="start-page-profile-card-h3">Eric Ferreira</h3>
+                        <span class="start-page-profile-card-span">Co-fundador</span>
+                        <p class="start-page-profile-card-p">Estudante de Sistema de Informação da Universidade Promove.</p>
+                        <p class="start-page-profile-card-p">Responsável pela programação do site.</p>
+                    </div>
+                </article>
+            </section>
+    
+            <section class="start-page-main-section4" id="pricing-article">
+                <article class="start-page-main-section4-article1">
+                    <header id="pricing">
+                        <h2 class="start-page-main-section4-article1-pricing-h2">Preço</h2>
+                    </header>
+                </article>
+    
+                <div>
+                    <article class="start-page-main-section4-article2">
+                        <figure class="start-page-main-section4-article2-figure">
+                            <img src="./assets/img/logo/logo-olimpo-solidario-light-theme.svg" alt="Olimpo Solidário - Logo - Tema Claro" class="start-page-main-section4-article2-figure-img">
+                        </figure>
+        
+                        <p class="start-page-main-section4-article2-p">
+                            Nossa ideia é que o programa Olimpo Solidário traga parcerias com cursinhos populares da Grande BH para dentro da Olimpo Aulas, sendo o principal foco o fornecimento de uma educação gratuita.
+                        </p>
+                        <br>
+                        <a href="./assets/pages/olimpo_solidario.html" class="start-page-main-section4-article2-a">
+                            <strong>Saiba Mais</strong>
+                        </a>
+                    </article>
+    
+                    <figure class="start-page-main-section4-figure">
+                        <img src="./assets/img/stickers/pricing_sticker.svg" alt="princing-sticker" class="start-page-main-section4-figure-img">
+                    </figure>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="start-page-footer">
+            <article class="start-page-footer-article">
+                <p class="start-page-footer-article-p">Feito com <span>&#10084;</span> pelo Time Olimpo</p>
+                <p class="start-page-footer-article-p">&copy; Copyright 2022 - Olimpo Aulas</p>
+            </article>
+        </footer>
     </main>
+    
 
-    <footer class="start-page-footer">
-        <article class="start-page-footer-article">
-            <p class="start-page-footer-article-p">Feito com <span>&#10084;</span> pelo Time Olimpo</p>
-            <p class="start-page-footer-article-p">&copy; Copyright 2022 - Olimpo Aulas</p>
-        </article>
-    </footer>
+    
 </body>
 </html>

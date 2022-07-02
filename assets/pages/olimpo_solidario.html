@@ -1,33 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-block">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="../js/main.js"></script>
     <title>Olimpo Aulas - Programa Olimpo Solidário</title>
 </head>
-<body class="olimpo-solidario-container">
-
+<body>
+    <div class="loader-wrapper" id="loader-background">
+        <img src="../../assets/img/logo/logo-olimpo-aulas-light-theme.svg" id="loader-img">
+        <br>
+        <div class="balls">
+            <div class="first-ball ball"></div>
+            <div class="second-ball ball"></div>
+            <div class="third-ball ball"></div>
+        </div>
+    </div>
 
     <div class="persistent-btn">
         <button id="theme-btn"><i id="theme" class="fa fa-moon-o"></i></button>
     </div>
-
-    <header class="olimpo-solidario-header">
-        <div class="olimpo-solidario-header-div" onclick="window.location.href = '../../../index.html'">
-            <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas" class="olimpo-solidario-header-div-img header-img">
-            <p class="olimpo-solidario-header-div-olimpo-logomarca header-logomarca">Olimpo Aulas</p>
-        </div>
-    </header>
-
-    <main class="olimpo-solidario-main">
-        
+    
+    <main class="olimpo-solidario-container hide-content">
+        <header class="olimpo-solidario-header">
+            <div class="olimpo-solidario-header-div" onclick="window.location.href = '../../../index.html'">
+                <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas" class="olimpo-solidario-header-div-img header-img">
+                <p class="olimpo-solidario-header-div-olimpo-logomarca header-logomarca">Olimpo Aulas</p>
+            </div>
+    
+            <div class="olimpo-solidario-header-div2">
+                <button class="olimpo-solidario-header-div2-btn" onclick="window.location.href = '../../assets/pages/contato.html' ">Contato</button>
+            </div>
+        </header>
+    
+        <main class="olimpo-solidario-main">
+            <section class="olimpo-solidario-main-section1">
+                <figure class="olimpo-solidario-main-section1-figure">
+                    <img src="../img/logo/logo-olimpo-solidario-light-theme.svg" alt="Olimpo Solidario - Logo" class="olimpo-solidario-main-section1-figure-img">
+                </figure>
+    
+                <div class="olimpo-solidario-main-section1-div1">
+                    <h1 class="olimpo-solidario-main-section1-div1-h1">Programa Olimpo Solidário</h1>
+                </div>
+    
+                <div class="olimpo-solidario-main-section1-div2">
+                    <p class="olimpo-solidario-main-section1-div2-p">
+                        Programa desenvolvido pela Olimpo Aulas para trazer cursinhos populares ao ambiente virtual e assim potencializar o ensino popular.
+                    </p>
+                </div>
+    
+                <div class="olimpo-solidario-main-section1-div3">
+                    <span class="olimpo-solidario-main-section1-div3-span">
+                        Se você é um possível aluno ou cursinho popular, faça sua inscrição na lista de espera abaixo!
+                    </span>
+                </div>
+            </section>
+    
+            <section class="olimpo-solidario-main-section2">
+                <section class="olimpo-solidario-main-section2-section1">
+                    <h2 class="olimpo-solidario-main-section2-section1-h2">Conheça o Projeto</h2>
+                </section>
+    
+                <section class="olimpo-solidario-main-section2-section2">
+                    <figure class="olimpo-solidario-main-section2-section2-figure">
+                        <img src="../img/stickers/olimpo-solidario-conheca-showing-support.svg" alt="Olimpo Solidario - Figurinha Conheça" class="olimpo-solidario-main-section2-section2-figure-img">
+                    </figure>
+    
+                    <div class="olimpo-solidario-main-section2-section2-div1">
+                        <p class="olimpo-solidario-main-section2-section2-div1-p">
+                            O objetivo do programa é ser uma ponte de conexão entre estudantes e cursinho populares.
+                        </p>
+    
+                        <p class="olimpo-solidario-main-section2-section2-div1-p">
+                            Nós presamos pela indepedência administrativa  de cada cursinho parceiro!
+                        </p>
+    
+                        <p class="olimpo-solidario-main-section2-section2-div1-p">
+                            Visamos a utilização de um processo selectivo unificado, com intuito facilitar a inscrição e a distribuição das vagas. 
+                        </p>
+    
+                        <p class="olimpo-solidario-main-section2-section2-div1-p">
+                            Queremos unificar ferramentas em um único site para ajudar professores, administradores e estudantes.
+                        </p>
+                    </div>
+                </section>
+            </section>
+    
+            <section class="olimpo-solidario-main-section3">
+                <section class="olimpo-solidario-main-section3-section1">
+                    <h2 class="olimpo-solidario-main-section3-section1-h2">Lista de Espera</h2>
+                </section>
+    
+                <section class="olimpo-solidario-main-section3-section2">
+                    <div class="olimpo-solidario-main-section3-section2-div1">
+                        <p class="olimpo-solidario-main-section3-section2-div1-p">
+    
+                        </p>
+                    </div>
+    
+                    <div class="olimpo-solidario-main-section3-section2-div2">
+                        <button class="olimpo-solidario-main-section3-section2-div2-button">
+                            Inscrição de Estudantes
+                        </button>
+    
+                        <button class="olimpo-solidario-main-section3-section2-div2-button">
+                            Inscrição de Cursinhos
+                        </button>
+    
+                        <button class="olimpo-solidario-main-section3-section2-div2-button">
+                            Inscrição de Voluntários
+                        </button>
+                    </div>
+                </section>
+    
+                <section class="olimpo-solidario-main-section3-section3">
+                    <input type="email" name="email-estudantes" id="email-estudantes">
+                    <input type="email" name="email-cursinhos" id="email-cursinhos">
+                    <input type="email" name="email-voluntarios" id="email-voluntarios">
+                </section>
+    
+                <section class="olimpo-solidario-main-section3-section4">
+                    <button class="olimpo-solidario-main-section3-section4-btn">Inscrever</button>
+                </section>
+            </section>
+        </main>
+    
+        <footer class="olimpo-solidario-footer">
+            <article class="olimpo-solidario-footer-article">
+                <p class="olimpo-solidario-footer-article-p">Feito com <span>&#10084;</span> pelo Time Olimpo</p>
+                <p class="olimpo-solidario-footer-article-p">&copy; Copyright 2022 - Olimpo Aulas</p>
+            </article>
+        </footer>
     </main>
-
-    <footer class="olimpo-solidario-footer">
-
-    </footer>
+    
 </body>
 </html>

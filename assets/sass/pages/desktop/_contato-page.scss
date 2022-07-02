@@ -1,0 +1,7 @@
+@use "../mobile/contato-page-mobile";
+
+@media only screen and (min-width: 700px) {
+    .popup {
+        width: auto;
+    }
+}

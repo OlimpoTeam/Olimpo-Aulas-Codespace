@@ -13,6 +13,7 @@
     @use "core/animations";
     @use "core/buttons";
     @use "core/slider";
+    @use "core/popup-contact-form";
 
 /* Importing Layout Styles (Visible only on Scss Files):
 ==============================================================================================*/
@@ -24,6 +25,7 @@
     @use "pages/desktop/start-page";
     @use "pages/desktop/login-page";
     @use "pages/desktop/olimpo-solidario";
+    @use "pages/desktop/contato-page";
 
 /* Importing Sections Styles (Visible only on Scss Files):
 ==============================================================================================*/
@@ -50,4 +52,10 @@
 
         margin: 0;
         padding: 0;
+    }
+
+    .hide-content{
+        display: none;
+        width: 0;
+        height: 0;
     }
