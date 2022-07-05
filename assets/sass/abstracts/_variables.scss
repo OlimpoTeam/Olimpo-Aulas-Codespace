@@ -1,14 +1,49 @@
 /*Colors:
 ====================================================================*/
-$light-theme-first-bg-color: #FFFFFF;
-$light-theme-second-bg-color: #F7F7F7;
+    /* Light Colors:
+    ================================================================*/
+        $light-theme-first-bg-color: #FFFFFF;
+        $light-theme-second-bg-color: #F7F7F7;
 
-$light-theme-primary-color-light-green: #49EAC3;
-$light-theme-primary-color-dark-blue: #233144;
-$light-theme-primary-color-black: #000000;
+        $light-theme-primary-color-light-green: #49EAC3;
+        $light-theme-primary-color-dark-blue: #233144;
+        $light-theme-primary-color-black: #000000;
 
-$light-theme-secondary-color-red: #9E4151;
-$light-theme-secundary-color-brown: #9E6421;
-$light-theme-secundary-color-yellow: #EB9431;
-$light-theme-secundary-color-light-blue: #37CFD4;
-$light-theme-secundary-color-light-green: #91EED7;
+        $light-theme-secondary-color-red: #9E4151;
+        $light-theme-secundary-color-brown: #9E6421;
+        $light-theme-secundary-color-yellow: #EB9431;
+        $light-theme-secundary-color-light-blue: #37CFD4;
+        $light-theme-secundary-color-light-green: #91EED7;
+
+    /* Dark Colors:
+    ================================================================*/
+        $dark-theme-first-bg-color: #1B2737;
+        $dark-theme-second-bg-color: #233144;
+
+        $dark-theme-primary-color-light-green: #49EAC3;
+        $dark-theme-primary-color-white: #F7F7F7;
+        $dark-theme-primary-color-black: #000000;
+
+        $dark-theme-secondary-color-pink: #EB6077;
+        $dark-theme-secundary-color-dark-yellow: #EB9431;
+        $dark-theme-secundary-color-light-yellow: #F6C227;
+        $dark-theme-secundary-color-darker-green: #165254;
+        $dark-theme-secundary-color-dark-green: #436E63;
+
+/* Variables for Apply:
+====================================================================*/
+    :root{
+        --body-color: #{$light-theme-first-bg-color};
+
+        --div-color: #{$light-theme-second-bg-color};
+
+        --div-color-special-one: #{$light-theme-primary-color-light-green};
+        --div-color-special-two: #{$light-theme-primary-color-dark-blue};
+
+        --text-color: #{$light-theme-primary-color-black};
+        --alternative-text-color: #{$light-theme-second-bg-color};
+        --always-black-text-color: #{$light-theme-primary-color-black};
+
+        --button-color-one: #{$light-theme-primary-color-dark-blue};
+        --button-color-two: #{$light-theme-secondary-color-red};
+    }

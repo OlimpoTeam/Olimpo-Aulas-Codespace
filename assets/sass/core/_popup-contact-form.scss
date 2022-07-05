@@ -1,12 +1,12 @@
 @use "../abstracts/mixins";
-@use "../abstracts/variables";
+@use "../abstracts/variables" as *;
 @use "../components/typography";
 
 .popup{
     width: 70%;
     height: auto;
     padding: 1.5em;
-    background-color: #f5f5f5;
+    background-color: var(--div-color);
     border-radius: 1.2em;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -31,13 +31,13 @@
         width: 7em;
         height: 2.9em;
         border-radius: 0.8rem;
-        background-color: variables.$light-theme-primary-color-dark-blue;
+        background-color: var(--div-color-special-two);
         font: typography.$noto-sans-12;
         border: none;
-        color: typography.$light-theme-font-color;
+        color: var(--text-color);
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        border: 2px solid variables.$light-theme-primary-color-dark-blue;
+        border: 2px solid var(--div-color-special-two);
         //text-transform: uppercase;
         transition: all 300ms ease-in-out;
 
@@ -49,8 +49,8 @@
     }
 
     .thankYouForSubmit-btn:hover{
-        color: #111;
-        background-color: #f5f5f5;
+        color: var(--text-color);
+        background-color: var(--div-color);
     }
 }
 
@@ -63,9 +63,8 @@
 }
 
 .thankYouForSubmit{
-    
     height: 100%;
     @include mixins.flex-row();
     @include mixins.flex-center();
-    background-color: #34f234;
+    //background-color: #34f234;
 }    

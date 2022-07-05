@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" type="image/x-icon" id="tab-icon">
+    <meta name="color-scheme" content="light dark">
     <script type="module" src="./assets/js/main.js"></script>
     <title>Olimpo Aulas: Um caminho de acesso ao Ensino Superior na Grande BH</title>
 </head>
 
 <body>
     <div class="loader-wrapper" id="loader-background">
-        <img src="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" id="loader-img">
+        <img id="loader-img" loading>
         <br>
         <div class="balls">
             <div class="first-ball ball"></div>
@@ -22,7 +24,8 @@
     </div>
 
     <div class="persistent-btn">
-        <button id="theme-btn"><i id="theme" class="fa fa-moon-o"></i></button>
+        <button id="theme-btn" id="persistent-button"><i id="theme" class="fa fa-moon-o"></i></button>
+        <button id="scroll-up-btn" id="persistent-button"><i id="scroll-up-btn-icon" class="fa fa-arrow-up"></i></button>
     </div>
 
     <main class="start-page-container main-content hide-content">

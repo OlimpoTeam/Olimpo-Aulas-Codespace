@@ -17,7 +17,7 @@
 
 /* Theme Color:
 ======================================================================================*/
-    //import theme from './modules/themeColor.js';
+    import { themeChosen, setTheme, changeTheme } from './modules/themeColor.mjs';
 
 /* Contact Form:
 ======================================================================================*/
@@ -29,38 +29,60 @@
 
 /* Processing:
 ==========================================================================================*/
-/* Window Loading:
-======================================================================================*/        
-    window.onload = () => {
-        loadingScreen();
-    }
+    /* Window Loading:
+    ======================================================================================*/        
+        window.onload = () => {
+            //saveFirstTheme();
+            changeTheme();
+            loadingScreen();
+        }
+    
+    /* Theme Color Button 
+    ======================================================================================*/
+        if (body.querySelector('#theme-btn')) {
+            const btnTheme = body.querySelector('#theme-btn');
+            
+            btnTheme.addEventListener('click', () => {
+                setTheme();
+            });
+        }    
 
-/* Event listeners:
-======================================================================================*/
     /* Scroll Up Button:
-    ==================================================================================*/
-        const btnTheme = body.querySelector('#theme');
-        btnTheme.addEventListener('click', scroll_up);
-
-    /* Start Page - Hamburguer Menu:
-    ==================================================================================*/
-        if(document.URL.includes("index.html")) {
-            const startMenu = body.querySelector('#start-page-header-menu-hamburguer');
-
-            startMenu.addEventListener('click', () => {
-                showMenu(startMenu);
-            })
+    ======================================================================================*/
+        if (body.querySelector('#scroll-up-btn')) {
+            const scrollUpBtn = body.querySelector('#scroll-up-btn');
+            
+            scrollUpBtn.addEventListener('click', () => {
+                scroll_up();
+            });
         }
-        
 
-    /* Contact Form - Submit Function:
-    ==================================================================================*/
-        if(document.URL.includes("contato.html")) {
-            const contactForm = body.querySelector("#contact-form");
+    /* Per Page:
+    ======================================================================================*/
+        const mainContent = body.querySelector('.main-content');
 
-            contactForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                const form = event.currentTarget;
-                formSubmit(form);
-            })
-        }
+        /* Start Page:
+        ==================================================================================*/
+            if(body.querySelector('#start-page-header-menu-hamburguer')) {
+                /* Hamburguer Menu Functionalities:
+                ==========================================================================*/
+                    const startMenu = body.querySelector('#start-page-header-menu-hamburguer');
+
+                    startMenu.addEventListener('click', () => {
+                        showMenu(startMenu);
+                    })   
+            }
+
+        /* Contact Page:
+        ==================================================================================*/
+            if(document.URL.includes("contato.html")) {
+                /* Contact Form - Submit Function:
+                ==========================================================================*/
+                    const contactForm = body.querySelector("#contact-form");
+
+                    contactForm.addEventListener('submit', (event) => {
+                        event.preventDefault();
+                        const form = event.currentTarget;
+                        formSubmit(form);
+                    })
+            }

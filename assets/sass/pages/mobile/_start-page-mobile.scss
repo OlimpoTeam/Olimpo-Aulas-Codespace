@@ -1,6 +1,6 @@
 @use "../../components/typography";
 @use "../../abstracts/mixins";
-@use "../../abstracts/variables";
+@use "../../abstracts/variables" as *;
 
 /* Mobile Style for Start Page:
 ==============================================================================================*/
@@ -41,7 +41,7 @@
                 border-radius: 1.2em;
                 @include mixins.flex-column();
                 @include mixins.flex-center();
-                background-color: variables.$light-theme-second-bg-color;
+                background-color: var(--div-color);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
                 .start-page-main-section-article1-figure{
@@ -81,7 +81,6 @@
             .start-page-main-section-article2{
                 @include mixins.flex-column();
                 @include mixins.flex-center();
-                background-color: antiquewhite;
                 width: 20em;
                 height: auto;
                 row-gap: 1em;
@@ -94,14 +93,15 @@
                     width: 100%;
                     padding: 1.1rem;
                     border-radius: 1.2em;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #91EED7;
-                    background-color: variables.$light-theme-secundary-color-light-green;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color-special-one);
+                    background-color: var(--div-color-special-one);
                 }
                 
     
                 .start-page-main-section-article2-span{
+                    color: var(--text-color);
                     .start-page-main-section-article2-span-a{
-                        color: #000000;
+                        color: var(--text-color);
                     }
                 }
             }
@@ -112,8 +112,8 @@
                 width: 3em;
                 height: 3em;
                 border-radius: 1.2em;
-                background-color: variables.$light-theme-second-bg-color;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                background-color: var(--div-color);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
     
                 div{
                     .start-page-main-section-figure-down-icon{
@@ -139,13 +139,14 @@
                 width: 100%;
                 height: 4em;
                 text-align: center;
-                background-color: variables.$light-theme-second-bg-color;
+                background-color: var(--div-color);
                 border-radius: 1.2em;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
     
                 #meet-us{
                     font: 1em Montserrat;
                     font-weight: 400;
+                    color: var(--text-color);
 
                     .start-page-main-section2-article1-meet-us-h2{
                         text-align: center;
@@ -159,7 +160,7 @@
                 flex-wrap: wrap;
                 width: 100%;
                 height: auto;
-                background-color: variables.$light-theme-primary-color-dark-blue;
+                background-color: var(--div-color-special-two);
                 border-radius: 1.2em;
                 text-align: center;
     
@@ -187,7 +188,7 @@
                     .start-page-main-section2-article1-div2-p{
                         width: 80%;
                         height: auto;
-                        color: #ffffff;
+                        color: var(--alternative-text-color);
                     }
                 }
             }
@@ -209,13 +210,14 @@
                 width: 100%;
                 height: 4em;
                 text-align: center;
-                background-color: variables.$light-theme-second-bg-color;
+                background-color: var(--div-color);
                 border-radius: 1.2em;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
     
                 #our-team{
                     font: 1em Montserrat;
                     font-weight: 400;
+                    color: var(--text-color);
 
                     .start-page-main-section3-article1-our-time-h2{
                         text-align: center;
@@ -252,13 +254,14 @@
                 width: 100%;
                 height: 4em;
                 text-align: center;
-                background-color: variables.$light-theme-second-bg-color;
+                background-color: var(--div-color);
                 border-radius: 1.2em;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
     
                 #pricing{
                     font: 1em Montserrat;
                     font-weight: 400;
+                    color: var(--text-color);
 
                     .start-page-main-section4-article1-pricing-h2{
                         text-align: center;
@@ -272,10 +275,10 @@
                 width: 100%;
                 height: 100%;
                 padding: 2em;
-                background-color: variables.$light-theme-second-bg-color;
+                background-color: var(--div-color);
                 border-radius: 1.2em;
                 margin-top: 1em;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
     
                 .start-page-main-section4-article2{
                     @include mixins.flex-column();
@@ -289,7 +292,7 @@
                     }
         
                     .start-page-main-section4-article2-a{
-                        color: #000000;
+                        color: var(--text-color);
                     }
                 }
     

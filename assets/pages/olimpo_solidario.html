@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/img/logo/logo-olimpo-aulas-light-theme.svg" type="image/x-icon" id="tab-icon">
+    <meta name="color-scheme" content="dark light">
     <script type="module" src="../js/main.js"></script>
     <title>Olimpo Aulas - Programa Olimpo Solidário</title>
 </head>
 <body>
     <div class="loader-wrapper" id="loader-background">
-        <img src="../../assets/img/logo/logo-olimpo-aulas-light-theme.svg" id="loader-img">
+        <img id="loader-img">
         <br>
         <div class="balls">
             <div class="first-ball ball"></div>
@@ -22,9 +24,10 @@
 
     <div class="persistent-btn">
         <button id="theme-btn"><i id="theme" class="fa fa-moon-o"></i></button>
+        <button id="scroll-up-btn" id="persistent-button"><i id="scroll-up-btn-icon" class="fa fa-arrow-up"></i></button>
     </div>
     
-    <main class="olimpo-solidario-container hide-content">
+    <main class="olimpo-solidario-container main-content hide-content">
         <header class="olimpo-solidario-header">
             <div class="olimpo-solidario-header-div" onclick="window.location.href = '../../../index.html'">
                 <img src="../img/logo/logo-olimpo-aulas-light-theme.svg" alt="Logo - Olimpo Aulas" class="olimpo-solidario-header-div-img header-img">

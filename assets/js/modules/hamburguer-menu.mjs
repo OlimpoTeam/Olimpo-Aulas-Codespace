@@ -1,11 +1,11 @@
 export function showMenu(menu) {
-    console.log('clicked!')
     const hamburguer = document.querySelector('.hamburguer');
     const header = document.querySelector('header');
     const navBar = document.querySelector('nav');
     const links = document.querySelector('ul');
 
-    if (header.classList.contains('mobile-header')) {
+    if (header.classList.contains('mobile-header')) 
+    {
         hamburguer.className += " fa-bars";
         hamburguer.classList.remove('fa-close');
 
@@ -16,9 +16,9 @@ export function showMenu(menu) {
 
         links.classList.remove('mobile-links');
 
-        closeBnt.classList.remove('show-close-icon');
-
-    } else {
+    }
+    else 
+    {
         hamburguer.classList.remove('fa-bars');
         hamburguer.className += " fa-close";
 
@@ -28,7 +28,5 @@ export function showMenu(menu) {
         navBar.classList.remove('start-page-header-nav');
 
         links.className += ' mobile-links';
-
-        closeBnt.className += ' show-close-icon';
     }
 }

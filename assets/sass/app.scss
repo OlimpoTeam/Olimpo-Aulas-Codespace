@@ -43,10 +43,12 @@
     }    
 
     body{
-        background-color: variables.$light-theme-first-bg-color;
+        //background-color: variables.$body-color;
+        background-color: var(--body-color);
 
         font: typography.$noto-sans-16;
         font-weight: 400;
+        color: var(--text-color);
 
         height: 100%;
 

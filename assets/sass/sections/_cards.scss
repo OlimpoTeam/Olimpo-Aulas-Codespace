@@ -19,8 +19,8 @@
                 height: 30em;
                 border-radius: 1.2em;
                 margin: 1em 0;
-                background-color: #f4f4f4;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px #F7F7F7;
+                background-color: var(--div-color);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
 
                 .start-page-profile-card-img{
                     width: 10em;

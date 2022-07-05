@@ -10,7 +10,7 @@
 
     /* Theme Color:
     ======================================================================================*/
-        import themeChosen  from './themeColor.mjs';
+        import { themeChosen } from './themeColor.mjs';
 
 /* Processing:
 ==========================================================================================*/
@@ -28,7 +28,7 @@
 
             /* Let Variables:
             ==============================================================================*/
-                let theme;
+                //let theme;
                 let loader_img_url;
 
         /* Scrolling up:
@@ -37,13 +37,10 @@
         
         /* Conditions:
         ==================================================================================*/
-            theme = themeChosen();
-
-            if(theme == 'light') {
+            if(themeChosen() == 'light') {
                 /* Setting Loader background color:
                 ==============================================================================*/
-                    //loaderWrapper.style.backgroundColor = "";
-                    //loaderWrapper.style.backgroundColor = '#000000';
+                    loaderWrapper.style.backgroundColor = "#F7F7F7";
                 
                 /* Setting the image to display according to theme:
                 ==============================================================================*/
@@ -56,16 +53,14 @@
                     loaderBall1.style.backgroundColor = "#233144";
                     loaderBall2.style.backgroundColor = "#233144";
                     loaderBall3.style.backgroundColor = "#233144";
-            }
-            
-            if(theme == 'dark') {
+            } else {
                 /* Setting Loader background color:
                 ==============================================================================*/
-                    loaderWrapper.style.backgroundColor = "#F7F7F7";
+                    loaderWrapper.style.backgroundColor = "#233144";
 
                 /* Setting the image to display according to theme:
                 ==============================================================================*/
-                    loader_img_url = "../assets/img/logo/logo-olimpo-aulas-dark-theme.svg";
+                    loader_img_url = "../../assets/img/logo/logo-olimpo-aulas-dark-theme.svg";
                     loaderImg.src = loader_img_url;
                     loaderImg.style.transform = "scaleY(1.05)";
 
@@ -79,14 +74,13 @@
         /* Timer:
         ==================================================================================*/
             setTimeout(() => {
-                mainContent.classList.remove('hide-content')
-
                 setTimeout(() => {
                     loaderWrapper.style.width = 0;
                     loaderWrapper.style.height = 0;
                     loaderWrapper.style.display = 'none';
                 }, 50);
-        
+
+                mainContent.classList.remove('hide-content')
                 html.classList.remove('scroll-block');
-            }, 1500);
+            }, 3500);
     }
