@@ -30,7 +30,7 @@
             grid-area: startsec1;
             @include mixins.flex-column();
             @include mixins.flex-center();
-            width: 95%;
+            width: 90%;
             height: auto;
             border-radius: 1.2em;
             margin-top: 1em;
@@ -127,7 +127,7 @@
             grid-area: startsec2;
             @include mixins.flex-column();
             @include mixins.flex-center();
-            width: 95%;
+            width: 90%;
             height: auto;
             border-radius: 1.2em;
             margin-top: 1em;
@@ -198,7 +198,7 @@
             grid-area: startsec3;
             @include mixins.flex-column();
             @include mixins.flex-center();
-            width: 95%;
+            width: 90%;
             height: auto;
             border-radius: 1.2em;
             margin-top: 1em;
@@ -232,7 +232,7 @@
                 grid-template-areas:"thirdcard thirdcard thirdcard"
                                     "firstcard firstcard firstcard"
                                     "secondcard secondcard secondcard";
-                width: 100%;
+                width: auto;
                 height: auto;
                 justify-items: center;
                 align-items: center;
@@ -243,7 +243,7 @@
             grid-area: startsec4;
             @include mixins.flex-column();
             @include mixins.flex-center();
-            width: 95%;
+            width: 90%;
             height: auto;
             border-radius: 1.2em;
             row-gap: 1em;

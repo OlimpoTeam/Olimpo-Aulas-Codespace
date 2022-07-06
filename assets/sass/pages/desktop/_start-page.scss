@@ -11,7 +11,7 @@
         .start-page-main{
             .start-page-main-section2{
                 .start-page-main-section2-article2{
-                    height: 30em;
+                    height: 25em;
                     @include mixins.flex-row();
                     @include mixins.flex-center();
                     flex-wrap: nowrap;
@@ -28,7 +28,7 @@
                         width: 60%;
     
                         .start-page-main-section2-article1-div2-p{
-                            width: 80%;
+                            width: 85%;
                         }
                     }
                 }

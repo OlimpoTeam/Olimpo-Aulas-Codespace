@@ -32,7 +32,6 @@
     /* Window Loading:
     ======================================================================================*/        
         window.onload = () => {
-            //saveFirstTheme();
             changeTheme();
             loadingScreen();
         }
@@ -75,7 +74,7 @@
 
         /* Contact Page:
         ==================================================================================*/
-            if(document.URL.includes("contato.html")) {
+            if(body.querySelector("#contact-form")) {
                 /* Contact Form - Submit Function:
                 ==========================================================================*/
                     const contactForm = body.querySelector("#contact-form");

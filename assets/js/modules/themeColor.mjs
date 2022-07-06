@@ -38,8 +38,8 @@
     const darkColors = {
         bodyColor: '#1B2737',
         divColor: '#233144',
-        divColorSpecialOne: '#165254',
-        divColorSpecialTwo: '#436E63',
+        divColorSpecialOne: '#436E63',
+        divColorSpecialTwo: '#C8C8C8',
         textColor: '#FFFFFF',
         alternativeTextColor: '#000000',
         buttonColorOne: '#49EAC3',

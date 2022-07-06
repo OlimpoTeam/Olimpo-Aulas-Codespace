@@ -21,11 +21,6 @@
                 margin: 1em 0;
                 background-color: var(--div-color);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 4px var(--div-color);
-
-                .start-page-profile-card-img{
-                    width: 10em;
-                    height: 10em;
-                }
             }
 
             .start-page-profile-card1{
@@ -41,4 +36,9 @@
             }
         }
     }
+}
+
+.start-page-profile-card-img{
+    width: 10em;
+    height: 10em;
 }

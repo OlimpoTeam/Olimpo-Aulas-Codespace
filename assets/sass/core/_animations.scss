@@ -8,7 +8,7 @@
     }
 
     #loader-background{
-        background-color: #F7F7F7;
+        background-color: var(--div-color);
     }
 
     .loader-wrapper{
@@ -25,8 +25,8 @@
             position: relative;
             top: 0;
             left: 0;
-            width: 15em;
-            height: 15em;
+            width: 10em;
+            height: 10em;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
 
@@ -60,8 +60,8 @@
 
         @keyframes bounce {
             to{
-                width: 1.375em;
-                height: 1.375em;
+                width: 1.2em;
+                height: 1.2em;
                 transform: translate3d(0, 1em, 0);
             }
         }

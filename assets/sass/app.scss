@@ -13,7 +13,6 @@
     @use "core/animations";
     @use "core/buttons";
     @use "core/slider";
-    @use "core/popup-contact-form";
 
 /* Importing Layout Styles (Visible only on Scss Files):
 ==============================================================================================*/
@@ -30,6 +29,7 @@
 /* Importing Sections Styles (Visible only on Scss Files):
 ==============================================================================================*/
     @use "sections/cards";
+    @use "sections/popup-contact-form";
 
 /* Importing Fonts:
 ==============================================================================================*/
