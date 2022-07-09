@@ -1068,10 +1068,119 @@ img {
   font: 1.5rem "Montserrat", sans-serif;
   font-weight: 550;
 }
+.contato-container .contato-main {
+  grid-area: callmain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  gap: 1em;
+}
+.contato-container .contato-main .contato-main-section1 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1em;
+}
+.contato-container .contato-main .contato-main-section1 .contato-main-section1-div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.contato-container .contato-main .contato-main-section1 .contato-main-section1-div .contato-main-section1-div-h2 {
+  text-color: var(--text-color);
+}
+.contato-container .contato-main .contato-main-section1 .contato-main-section1-div .contato-main-section1-div-span {
+  text-color: var(--text-color);
+}
+.contato-container .contato-main .contato-main-section1 .contato-main-section1-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+.contato-container .contato-main .contato-main-section1 .contato-main-section1-figure .contato-main-section1-figure-img {
+  width: 15em;
+  height: 15em;
+}
+.contato-container .contato-main .contato-main-section2 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #label-name, .contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #label-email, .contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #label-assunto, .contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #label-message {
+  margin-left: 0.3em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #name, .contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #email, .contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #assunto {
+  width: 20em;
+  height: 2.5em;
+  background-color: transparent;
+  border: var(--text-color) solid 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p #message {
+  width: 20em;
+  height: 10em;
+  background-color: transparent;
+  border: var(--text-color) solid 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p .contact-submit {
+  background-color: #9E4151;
+  color: #ffffff;
+  font-weight: bold;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p ::-moz-placeholder {
+  color: var(--text-color);
+  font: 0.9em "Noto Sans", sans-serif;
+  margin-left: 0.2em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p :-ms-input-placeholder {
+  color: var(--text-color);
+  font: 0.9em "Noto Sans", sans-serif;
+  margin-left: 0.2em;
+}
+.contato-container .contato-main .contato-main-section2 #contact-form .contato-main-section2-form-p ::placeholder {
+  color: var(--text-color);
+  font: 0.9em "Noto Sans", sans-serif;
+  margin-left: 0.2em;
+}
+.contato-container .contato-footer {
+  grid-area: callfooter;
+}
 
 @media only screen and (min-width: 700px) {
   .popup {
     width: auto;
+  }
+
+  .contato-main {
+    flex-wrap: wrap;
   }
 }
 /* Start Page Profile Cards:

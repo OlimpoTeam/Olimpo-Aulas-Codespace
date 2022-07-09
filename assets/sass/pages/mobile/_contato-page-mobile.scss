@@ -1,6 +1,6 @@
 @use "../../components/typography";
 @use "../../abstracts/mixins";
-@use "../../abstracts/variables";
+@use "../../abstracts/variables" as *;
 
 /* Mobile Style for Contato Page:
 ==============================================================================================*/
@@ -46,5 +46,102 @@
                     font-weight: 550;
                 }
             }
+        }
+
+        .contato-main{
+            grid-area: callmain;
+            @include mixins.flex-column();
+            @include mixins.flex-center();
+            width: 100%;
+            height: auto;
+            gap: 1em;
+
+            .contato-main-section1{
+                width: 90%;
+                height: auto;
+                @include mixins.flex-column();
+                @include mixins.flex-center();
+                gap: 1em;
+
+                .contato-main-section1-div{
+                    @include mixins.flex-column();
+                    text-align: start;
+    
+                    .contato-main-section1-div-h2{
+                        text-color: var(--text-color);
+                    }
+    
+                    .contato-main-section1-div-span{
+                        text-color: var(--text-color);
+                    }
+                }
+    
+                .contato-main-section1-figure{
+                    @include mixins.flex-column();
+                    @include mixins.flex-center();
+                    width: 100%;
+                    height: auto;
+    
+                    .contato-main-section1-figure-img{
+                        width: 15em;
+                        height: 15em;
+                    }
+                }
+            }
+    
+            .contato-main-section2{
+                width: 90%;
+                height: auto;
+                @include mixins.flex-column();
+                @include mixins.flex-center();
+                gap: 1em;
+    
+                #contact-form{
+                    @include mixins.flex-column();
+                    @include mixins.flex-center();
+                    gap: 1em;
+    
+                    .contato-main-section2-form-p{
+    
+                        #label-name, #label-email, #label-assunto, #label-message{
+                            margin-left: 0.3em;
+                        }
+
+                        #name, #email, #assunto{
+                            width: 20em;
+                            height: 2.5em;
+                            background-color: transparent;
+                            border: var(--text-color) solid 0.2em;
+                            border-radius: 0.5em;
+                            padding: 0.2em;
+                        }
+    
+                        #message{
+                            width: 20em;
+                            height: 10em;
+                            background-color: transparent;
+                            border: var(--text-color) solid 0.2em;
+                            border-radius: 0.5em;
+                            padding: 0.2em;
+                        }
+    
+                        .contact-submit{
+                            background-color: #9E4151;
+                            color: #ffffff;
+                            font-weight: bold;
+                        }
+
+                        ::placeholder{
+                            color: var(--text-color);
+                            font: typography.$noto-sans-12;
+                            margin-left: 0.2em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contato-footer{
+            grid-area: callfooter;
         }
     }

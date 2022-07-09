@@ -1,7 +1,14 @@
 @use "../mobile/contato-page-mobile";
+@use "../../components/typography";
+@use "../../abstracts/mixins";
+@use "../../abstracts/variables" as *;
 
 @media only screen and (min-width: 700px) {
     .popup {
         width: auto;
+    }
+
+    .contato-main{
+        flex-wrap: wrap;
     }
 }

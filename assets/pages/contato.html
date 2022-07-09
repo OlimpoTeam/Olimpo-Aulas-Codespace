@@ -54,38 +54,38 @@
                     <span class="contato-main-section1-div-span">Este formulário é nosso meio de contato oficial.</span>
                 </div>
                 
-                <figure class="contato-main-section2-figure">
-                    <img src="../img/stickers/contact-sticker.svg" alt="Figura - Ação de Entrar em Contato">
+                <figure class="contato-main-section1-figure">
+                    <img class="contato-main-section1-figure-img" src="../img/stickers/contact-sticker.svg" alt="Figura - Ação de Entrar em Contato">
                 </figure>
             </section>
     
             <section class="contato-main-section2">
                 <form id="contact-form" method="post">
                     <p class="contato-main-section2-form-p">
-                        <label for="name">Nome:</label>
+                        <label for="name" id="label-name">Nome:</label>
                         <br>
                         <input type="text" name="name" id="name" required placeholder="Digite seu nome">
                     </p>
     
                     <p class="contato-main-section2-form-p">
-                        <label for="email">E-mail:</label>
+                        <label for="email" id="label-email">E-mail:</label>
                         <br>
                         <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
                     </p>
     
                     <p class="contato-main-section2-form-p">
-                        <label for="assunto">Assunto:</label>
+                        <label for="assunto" id="label-assunto">Assunto:</label>
                         <br>
                         <input type="text" name="assunto" id="assunto" required placeholder="Digite o assunto">
                     </p>
     
                     <p class="contato-main-section2-form-p">
-                        <label for="mensagem">Mensagem:</label>
+                        <label for="message" id="label-message">Mensagem:</label>
                         <br>
                         <textarea name="message" id="message" cols="auto" rows="auto" required placeholder="Digite sua mensagem"></textarea>
                     </p>
     
-                    <button type="submit" id="contato-main-section2-form-submit">
+                    <button type="submit" id="contato-main-section2-form-submit" class="contact-submit">
                         <i class="fa fa-paper-plane"></i> Enviar
                     </button>
                 </form>
