@@ -61,14 +61,17 @@
                 height: auto;
                 @include mixins.flex-column();
                 @include mixins.flex-center();
-                gap: 1em;
+
 
                 .contato-main-section1-div{
                     @include mixins.flex-column();
                     text-align: start;
+                    margin-top: 2%;
+                    
     
                     .contato-main-section1-div-h2{
                         text-color: var(--text-color);
+                        font-weight: bold;
                     }
     
                     .contato-main-section1-div-span{
@@ -108,33 +111,51 @@
                         }
 
                         #name, #email, #assunto{
-                            width: 20em;
-                            height: 2.5em;
+                            width: 23em;
+                            height: 3em;
                             background-color: transparent;
                             border: var(--text-color) solid 0.2em;
                             border-radius: 0.5em;
                             padding: 0.2em;
+                            color: var(--text-color);
                         }
     
                         #message{
-                            width: 20em;
-                            height: 10em;
+                            width: 23em;
+                            height: 12em;
                             background-color: transparent;
                             border: var(--text-color) solid 0.2em;
                             border-radius: 0.5em;
                             padding: 0.2em;
-                        }
-    
-                        .contact-submit{
-                            background-color: #9E4151;
-                            color: #ffffff;
-                            font-weight: bold;
+                            color: var(--text-color);
                         }
 
                         ::placeholder{
                             color: var(--text-color);
                             font: typography.$noto-sans-12;
                             margin-left: 0.2em;
+                        }
+
+                        input:focus{
+                            outline: none !important;
+                            border: var(--text-color) solid 0.2em;
+                            box-shadow:  0 0 3px var(--text-color);
+                        }
+                    }
+
+                    .contact-submit{
+                        background-color: $light-theme-primary-color-dark-blue;
+                        color: #ffffff;
+                        font-weight: bold;
+                        border: #9e41501f solid 0.02em;
+                        border-radius: 0.5em;
+                        width: 23em;
+                        height: 2.5em;
+                        padding: 0.5em;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        
+                        .fa{
+                            margin: 0 0.4em;
                         }
                     }
                 }

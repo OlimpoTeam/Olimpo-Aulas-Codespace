@@ -8,7 +8,71 @@
         width: auto;
     }
 
-    .contato-main{
-        flex-wrap: wrap;
+    .contato-container{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2 1f);
+        grid-template-rows: repeat(3 1f);
+        grid-template-areas:"callheader callheader"
+                            "callmain callmain"
+                            "callfooter callfooter";
+        justify-content: center;
+        align-content: center;
+        gap: 5em;
+
+        .contato-header{
+            grid-area: callheader;
+            @include mixins.flex-row();
+            justify-self: flex-start;
+            align-self: center;
+        }
+
+        .contato-main{
+            grid-area: callmain;
+            @include mixins.flex-row();
+            @include mixins.flex-center();
+            width: 100%;
+            height: auto;
+            gap: 5em;
+
+            .contato-main-section1{
+                width: 90%;
+                height: auto;
+                @include mixins.flex-column();
+                justify-content: center;
+                align-self: flex-start;
+                row-gap: 3em;
+    
+                .contato-main-section1-figure{
+                    .contato-main-section1-figure-img{
+                        width: 20em;
+                        height: 20em;
+                    }
+                }
+            }
+    
+            .contato-main-section2{
+                #contact-form{
+                    .contato-main-section2-form-p{
+                        #name, #email, #assunto{
+                            width: 26em;
+                        }
+    
+                        #message{
+                            width: 26em;
+                        }
+                    }
+
+                    .contact-submit{
+                        width: 26em;
+                    }
+                }
+            }
+        }
+
+        .contato-footer{
+            grid-area: callfooter;
+        }
     }
 }
